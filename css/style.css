@@ -1,0 +1,23 @@
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    padding-top: 72px;
+    font-family: "Google Sans", sans-serif;
+    font-size: 1rem;
+    color: #637282;
+    overflow-x: hidden;
+    font-weight: normal;
+    letter-spacing: -.3px;
+    margin: 0;
+    text-align: left;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
