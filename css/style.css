@@ -16,8 +16,52 @@ body{
     text-align: left;
     background-color: #fff;
     line-height: 1.5;
+    width: 980px;
 }
-
-*, ::after, ::before {
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    align-content: center;
+}
+.goal{ 
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .reason{ 
+    grid-column: 2 ;
+    grid-row: 1;
+  }
+  .target{ 
+    grid-column: 3;
+    grid-row: 1;
+  }
+  *, ::after, ::before {
     box-sizing: border-box;
+}
+#navbar-items ul li{
+    display: inline;
+}
+#logo{
+    float: left;
+}
+#navbar-items{
+    float: right;
+}
+#logo img{
+    height: 100px;
+    width: 250px;
+}
+/*card section*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+.card:hover{
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.media{
+    padding: 3rem;
 }
