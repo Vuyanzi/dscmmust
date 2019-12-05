@@ -6,6 +6,8 @@ html, body {
 
 body{
     padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     font-family: "Google Sans", sans-serif;
     font-size: 1rem;
     color: #637282;
@@ -22,6 +24,11 @@ body{
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #1B2733;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 700;
+}
 .pull-left{
     float: left;
 }
@@ -30,13 +37,31 @@ body{
     float: right;
 }
 
-.clearfix::after {
+.clearfix:after {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.btn{
+    color: #fff;
+    background: rgb(29, 72, 212);
+    text-decoration: none;
+    padding: 10px;
+}
+
+section{
+    margin-bottom: 20px;
+}
 
 /* Navbar styling */
+#main-nav{
+    position: sticky;
+}
 .navbar-nav{
     float: right;
 }
@@ -59,15 +84,21 @@ body{
 }
 
 a.btn-rounded{
-    text-decoration: none;
-    color: #fff;
     border-radius: 30px;
-    background: rgb(29, 72, 212);
     text-transform: capitalize;
     font-weight: 500;
-    padding: 10px;
 }
 
 a.btn-rounded:hover{
     opacity: 0.8;
+}
+
+/* Overview section */
+#overview .welcome{
+    width: 450px;
+}
+
+.section-img{
+    height: 400px;
+    width: auto;
 }
