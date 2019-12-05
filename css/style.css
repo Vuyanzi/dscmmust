@@ -5,7 +5,7 @@ html, body {
 }
 
 body{
-    padding-top: 72px;
+    padding-top: 20px;
     font-family: "Google Sans", sans-serif;
     font-size: 1rem;
     color: #637282;
@@ -20,4 +20,54 @@ body{
 
 *, ::after, ::before {
     box-sizing: border-box;
+}
+
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* Navbar styling */
+.navbar-nav{
+    float: right;
+}
+
+.navbar-nav ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.navbar-nav .nav-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    color:black;
+    opacity: 0.5;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+a.btn-rounded{
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    background: rgb(29, 72, 212);
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 10px;
+}
+
+a.btn-rounded:hover{
+    opacity: 0.8;
 }
