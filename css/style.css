@@ -37,6 +37,38 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: right;
 }
 
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.ghost-blue {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #557DBF;
+    color: transparent;
+}
+
+.ghost-green {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #189E59;
+    color: transparent;
+}
+
+.ghost-red {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #E1382B;
+    color: transparent;
+}
 .clearfix:after {
     content: "";
     clear: both;
@@ -101,4 +133,15 @@ a.btn-rounded:hover{
 .section-img{
     height: 400px;
     width: auto;
+}
+
+#overview-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.overview-card{
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
 }
