@@ -5,7 +5,9 @@ html, body {
 }
 
 body{
-    padding-top: 72px;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     font-family: "Google Sans", sans-serif;
     font-size: 1rem;
     color: #637282;
@@ -20,4 +22,126 @@ body{
 
 *, ::after, ::before {
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #1B2733;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 700;
+}
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.ghost-blue {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #557DBF;
+    color: transparent;
+}
+
+.ghost-green {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #189E59;
+    color: transparent;
+}
+
+.ghost-red {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #E1382B;
+    color: transparent;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.btn{
+    color: #fff;
+    background: rgb(29, 72, 212);
+    text-decoration: none;
+    padding: 10px;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+/* Navbar styling */
+#main-nav{
+    position: sticky;
+}
+.navbar-nav{
+    float: right;
+}
+
+.navbar-nav ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.navbar-nav .nav-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    color:black;
+    opacity: 0.5;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+a.btn-rounded{
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+a.btn-rounded:hover{
+    opacity: 0.8;
+}
+
+/* Overview section */
+#overview .welcome{
+    width: 450px;
+}
+
+.section-img{
+    height: 400px;
+    width: auto;
+}
+
+#overview-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.overview-card{
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
 }
