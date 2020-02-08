@@ -1,82 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="author" content="DSC MMUST">
-    <meta name="description" content="Developer Student Clubs (DSC)a is a Google Developers program for university students to learn mobile and web development skills.">
-    <meta name="keywords" content="dsc, mmust, masinde muliro university, google developers, sub saharan africa, kenya, computer science">
+    <meta name="description"
+        content="Developer Student Clubs (DSC)a is a Google Developers program for university students to learn mobile and web development skills.">
+    <meta name="keywords"
+        content="dsc, mmust, masinde muliro university, google developers, sub saharan africa, kenya, computer science">
     <meta name="theme-color" content="#2F5BE7">
     <title>DSC - MMUST</title>
 
     <link rel="icon" href="img/icon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Material+Icons" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Material+Icons" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
-        <nav id="main-nav" class="clearfix">
-            <!-- navigation pane goes here -->
-            <div id="logo">
-                <img src="img/icon.png" class="pull-left" height="40" width="100" alt="MMUST DSC logo" />
-            </div>
-            <div class="navbar-nav">
-                <ul>
-                    <li><a href="#" class="nav-link">Overview</a></li>
-                    <li><a href="#" class="nav-link">Technologies</a></li>
-                    <li><a href="#" class="nav-link">Learn</a></li>
-                    <li><a href="#" class="nav-link">Projects</a></li>
-                    <li><a href="#" class="nav-link">Workshops</a></li>
-                    <li><a href="#" class="nav-link">Team</a></li>
-                    <li><a href="#" class="nav-link">Stories</a></li>
-                    <li><a href="#" class="btn btn-rounded">Next Event</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section id="overview" class="clearfix">
-        <div class="welcome pull-left">
-            <h2 >Developer Student Club<br>MMUST</h2>
-            <div>
-                <p >Developer Student Clubs is a <span>Google</span>
-                    Developers program for university students to learn<span> mobile</span> and <span>web development skills</span>, <span>design thinking skills</span> and <span> leadership skills.</span>
-                </p>
-                <a href="#" class="btn" target="_blank" ><i class="fab fa-meetup"></i> &nbsp; Become a member</a>
-            </div>
-        </div>
-        <div class="pull-right">
-            <img class="section-img" src="img/diversity.png" alt="diversity" />
-        </div>
-    </section>
-    
-    <section id="overview-cards">
-            <div class="card overview-card">
-                <i class="fas fa-rocket ghost-blue"></i>
-              <div class="card-body">
-                <h4>Concept of DSC</h4>
-                <p>The DSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.</p>
-              </div>
-            </div>
-            <div class="card overview-card">
-                    <i class="fas fa-lightbulb ghost-green"></i>
-                  <div class="card-body">
-                    <h4>Concept of DSC</h4>
-                    <p>The DSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.</p>
-                  </div>
+        <div class="container">
+            <nav id="main-nav" class="navbar" role="navigation" aria-label="main navigation">
+
+                <!-- navigation pane goes here -->
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="img/icon.png" width="112" height="28" alt="MMUST DSC logo">
+                    </a>
+                    <a role="button" onclick="toggleMenu()" class="navbar-burger burger" aria-label="menu"
+                        aria-expanded="false" data-target="navbarLinks">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </a>
                 </div>
-                <div class="card overview-card">
-                        <i class="fas fa-users ghost-red"></i>
-                      <div class="card-body">
-                        <h4>Concept of DSC</h4>
-                        <p>The DSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.</p>
-                      </div>
+
+                <div id="navbarLinks" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="#" class="navbar-item">Overview</a>
+                        <a href="#" class="navbar-item">Technologies</a>
+                        <a href="#" class="navbar-item">Learn</a>
+                        <a href="#" class="navbar-item">Projects</a>
+                        <a href="#" class="navbar-item">Workshops</a>
+                        <a href="#" class="navbar-item">Team</a>
+                        <a href="#" class="navbar-item">Stories</a>
+                        <div class="navbar-item">
+                            <a href="#" class="btn event-btn">Next Event</a>
+                        </div>
                     </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <section id="overview">
+        <div class="container">
+            <div class="cols">
+                <div class="welcome col-6">
+                    <h2>Developer Student Club<br>MMUST</h2>
+                    <div>
+                        <p>Developer Student Clubs is a <span>Google</span>
+                            Developers program for university students to learn<span> mobile</span> and <span>web
+                                development
+                                skills</span>, <span>design thinking skills</span> and <span> leadership skills.</span>
+                        </p>
+                        <a href="#" class="btn" target="_blank"><i class="fab fa-meetup"></i> &nbsp; Become a member</a>
+                    </div>
+                </div>
+                <div class="col-5 ml-auto">
+                    <img class="section-img" src="img/diversity.png" alt="diversity" />
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <section id="overview-cards">
+        <div class="container">
+            <div class="cols center-items">
+                <div class="col-4">
+                    <div class="card overview-card">
+                        <i class="fas fa-rocket ghost-blue"></i>
+                        <div class="card-body">
+                            <h4>Concept of DSC</h4>
+                            <p>The DSC program is a grassroots channel through which Google provides development skills,
+                                mobile
+                                and
+                                web development skills for students, towards employability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card overview-card">
+                        <i class="fas fa-lightbulb ghost-green"></i>
+                        <div class="card-body">
+                            <h4>Concept of DSC</h4>
+                            <p>The DSC program is a grassroots channel through which Google provides development skills,
+                                mobile
+                                and
+                                web development skills for students, towards employability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card overview-card">
+                        <i class="fas fa-users ghost-red"></i>
+                        <div class="card-body">
+                            <h4>Concept of DSC</h4>
+                            <p>The DSC program is a grassroots channel through which Google provides development skills,
+                                mobile
+                                and
+                                web development skills for students, towards employability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="technologies">
+        <div class="container">
+            <header class="section-header text-center">
+                <h2 class="section-title">Technologies we're excited about</h2>
+                <p class="section-subtitle">Opportunities to learn &amp; access deep technical content.</p><br>
+            </header>
+            <div class="cols center-items">
+                <div class="col-6">
+                    <div class="feature-list-image">
+                        <img class="section-img" src="img/android.jpg" alt="diversity" />
+                    </div>
+                </div>
+                <div class="col-5 ml-auto">
+                    <div class="feature-list-wrapper">
+                        <div class="content-header">
+                            <h2 class="content-title">Android Development</h2>
+                            <p>Every year Google developers release exciting new updates to the world's most popular
+                                operating system. We always have sessions to keep you updated and mastering the latest
+                                trends in modern Android development.</p>
+                        </div><a href="https://codelabs.developers.google.com/?cat=Android" class="hero-button"
+                            target="_blank" rel="noreferrer">Codelabs &nbsp; &nbsp;<i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="web-technologies">
+        <div class="container">
+            <div class="cols center-items">
+                <div class="col-5">
+                    <div class="feature-list-wrapper">
+                        <div class="content-header">
+                            <h2 class="content-title">Web Development</h2>
+                            <p>Learn the core foundations of a delightful web experience both for the user and
+                                developer. Stay up to tabs with emerging and trending technologies. Get access to a
+                                guided, tutorial and hands-on coding experience.</p>
+                        </div><a href="https://codelabs.developers.google.com/?cat=Web" class="hero-button"
+                            target="_blank" rel="noreferrer">Codelabs &nbsp; &nbsp;<i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 ml-auto">
+                    <div class="feature-list-image">
+                        <img class="section-img" src="img/web.jpg" alt="diversity" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="cloud-technologies">
+            <div class="container">
+                <div class="cols center-items">
+                    <div class="col-6">
+                        <div class="feature-list-image">
+                            <img class="section-img" src="img/ml.svg" alt="diversity" />
+                        </div>
+                    </div>
+                    <div class="col-5 ml-auto">
+                        <div class="feature-list-wrapper">
+                            <div class="content-header">
+                                <h2 class="content-title">Machine Learning</h2>
+                                <p>Learn how to drive user engagement and retention with intelligent apps that are able to effectively serve users what they need without the fuss by providing these systems with the ability to automatically learn and improve from experience without being explicitly programmed.</p>
+                            </div><a href="https://codelabs.developers.google.com/" class="hero-button"
+                                target="_blank" rel="noreferrer">Codelabs &nbsp; &nbsp;<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     <footer>
-        
+
     </footer>
+    <script type="text/javascript" src="/js/main.js"></script>
 </body>
+
 </html>
