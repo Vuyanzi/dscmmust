@@ -59,6 +59,10 @@ p {
     float: right;
 }
 
+img {
+    vertical-align: middle;
+    border-style: none;
+}
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -251,6 +255,68 @@ a.btn-rounded:hover {
     border-radius: 5px;
 }
 
+@media (min-width: 576px) {
+    .col-sm-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .col-sm-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .col-sm-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.3333%;
+    }
+
+    .col-sm-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .col-sm-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
 @media (min-width: 768px) {
     .col-1 {
         flex: 0 0 8.33333%;
@@ -409,4 +475,82 @@ a.btn-rounded:hover {
 
 .feature-list-wrapper .content-header {
     margin-bottom: 20px;
+}
+
+.section-spacer {
+    padding: 100px 0;
+}
+
+@media (max-width: 768px){
+.section-spacer {
+    padding: 80px 0;
+}
+}
+
+.logo-sm {
+    max-width: 200px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+ul{
+    list-style-type: none; 
+}
+
+.social-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-list li {
+    display: inline-flex;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-widget a {
+    color: #637282;
+}
+
+#scroll {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #2F5BE7;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#scroll i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    margin-left: -5px;
+    margin-top: -7px;
+    height: 0;
+    width: 0;
 }
