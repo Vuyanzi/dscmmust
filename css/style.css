@@ -139,15 +139,17 @@ section {
 
 .navbar-item,
 .navbar-link {
-    color: #4a4a4a;
+    color: #637282;
     display: block;
     line-height: 1.5;
     padding: .5rem .75rem;
     position: relative;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 .navbar-burger {
-    color: #4a4a4a;
+    color: #637282;
     cursor: pointer;
     display: block;
     height: 3.25rem;
@@ -553,4 +555,8 @@ ul{
     margin-top: -7px;
     height: 0;
     width: 0;
+}
+
+.gray-bg {
+    background-color: #fafafa;
 }
